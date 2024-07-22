@@ -1,0 +1,16 @@
+.table-container {
+  padding: 10px 0;
+}
+.foote-table {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  align-items: center;
+  padding-bottom: 0.625rem;
+  padding-top: 0.5rem;
+}
+.container-movments {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}

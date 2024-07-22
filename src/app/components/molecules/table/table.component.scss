@@ -1,0 +1,28 @@
+.table-container {
+  overflow-x: auto;
+}
+
+.custom-table {
+  width: 100%;
+  border-collapse: collapse;
+  color: #2f3941;
+
+  th,
+  td {
+    padding: 14px 8px;
+    text-align: left;
+  }
+
+  th {
+    font-weight: bold;
+    border-bottom: 1px solid #d3d7da;
+  }
+
+  td {
+    border-bottom: 1px solid #e3e6e8;
+  }
+
+  tr:last-child td {
+    border-bottom: none;
+  }
+}

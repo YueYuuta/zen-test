@@ -1,0 +1,21 @@
+.table-detail {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: space;
+  text-align: right;
+  &__calculate {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+    span {
+      width: 100%;
+    }
+  }
+}
+.flex-left {
+  flex: 4;
+}
+.flex-right {
+  flex: 1;
+}
