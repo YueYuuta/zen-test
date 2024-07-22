@@ -6,7 +6,7 @@ import {
 } from './components/molecules/accordion/accordion.component';
 import { TableComponent } from './components/molecules/table/table.component';
 import { FooterTableComponent } from './components/molecules/footer-table/footer-table.component';
-
+declare var ZAFClient: any;
 @Component({
   selector: 'app-root',
   standalone: true,
@@ -26,4 +26,10 @@ export class AppComponent {
     open: false,
   };
   title = 'zendesk-test';
+
+  ngOnInit(): void {
+    console.log('la aplicacion de angular esta corriendo!');
+    this.client = ZAFClient.init();
+    this.client.invoke('resize', { width: '100%', height: '400px' });
+  }
 }
